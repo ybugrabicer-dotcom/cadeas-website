@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<script id="tailwind-config" defer>
 tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffdadb","surface-bright":"#fdf9f3","on-primary-fixed-variant":"#3a4665","outline":"#75777e","outline-variant":"#c5c6ce","on-error":"#ffffff","error":"#ba1a1a","on-tertiary-container":"#9c8e71","on-tertiary":"#ffffff","tertiary-fixed":"#f2e1c0","on-secondary-fixed":"#40000d","surface-container":"#f1ede7","inverse-primary":"#b9c6eb","background":"#fdf9f3","inverse-on-surface":"#f4f0ea","secondary-fixed-dim":"#ffb2b6","tertiary-fixed-dim":"#d5c5a5","surface-container-high":"#ebe8e2","on-secondary-fixed-variant":"#842131","on-primary":"#ffffff","secondary-container":"#ff7e8a","on-background":"#1c1c18","primary-fixed":"#d9e2ff","tertiary-container":"#302711","secondary":"#a43946","surface-container-highest":"#e6e2dc","tertiary":"#1a1302","surface-dim":"#ddd9d4","on-primary-fixed":"#0d1b37","surface-tint":"#515e7e","on-error-container":"#93000a","on-surface-variant":"#45464d","inverse-surface":"#31302d","error-container":"#ffdad6","primary-fixed-dim":"#b9c6eb","on-tertiary-fixed":"#231a06","surface-variant":"#e6e2dc","primary-container":"#1a2744","surface":"#fdf9f3","on-primary-container":"#828eb1","on-secondary":"#ffffff","surface-container-low":"#f7f3ed","surface-container-lowest":"#ffffff","primary":"#04122e","on-secondary-container":"#751426","on-surface":"#1c1c18","on-tertiary-fixed-variant":"#51452d"},fontFamily:{"headline":["Noto Serif","serif"],"body":["Manrope","sans-serif"],"label":["Manrope","sans-serif"]},borderRadius:{"DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px"}}}}
 </script>
 <style>
@@ -58,7 +60,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
 
 <section class="relative h-[60vh] overflow-hidden flex items-end">
   <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent z-10"></div>
-  <img alt="İspanya İtalya Portekiz karşılaştırma" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1400&q=85"/>
+  <img alt="İspanya İtalya Portekiz karşılaştırma" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1400&q=85"/ fetchpriority="high">
   <div class="relative z-20 container mx-auto px-8 lg:px-24 pb-16">
     <div class="max-w-3xl">
       <div class="flex items-center gap-3 mb-4">
