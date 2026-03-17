@@ -31,16 +31,29 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
       <a class="text-sm font-semibold tracking-wide text-white/80 hover:text-tertiary-fixed-dim transition-colors" href="/iletisim">İletişim</a>
     </div>
   </div>
-  <div class="flex items-center gap-6">
-    <div class="flex items-center gap-2 cursor-pointer">
-      <span class="material-symbols-outlined text-white/70">language</span>
-      <span class="text-xs font-bold text-white/70">TR / EN</span>
-    </div>
-    <a href="/anket" class="bg-secondary text-on-secondary px-6 py-2.5 text-sm font-bold hover:brightness-110 transition-all">
-      Profil Anketi
-    </a>
+  <div class="flex items-center gap-3"><div class="hidden sm:flex items-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-white/70" style="font-size:18px">language</span><span class="text-xs font-bold text-white/70">TR / EN</span></div><a href="/anket" class="hidden sm:block bg-secondary text-on-secondary px-4 py-2 text-xs font-bold hover:brightness-110 transition-all whitespace-nowrap">Profil Anketi</a>
+    <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+      <span class="block w-6 h-0.5 bg-white/80 transition-all" id="ham-1"></span>
+      <span class="block w-6 h-0.5 bg-white/80 transition-all" id="ham-2"></span>
+      <span class="block w-6 h-0.5 bg-white/80 transition-all" id="ham-3"></span>
+    </button>
   </div>
 </nav>
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-primary transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col pt-20 px-8 pb-8">
+  <div class="flex flex-col gap-4 mt-8">
+    <a class="text-2xl font-headline text-white/90 py-3 border-b border-white/10" href="/" onclick="closeMobileMenu()">Ana Sayfa</a>
+    <a class="text-2xl font-headline text-white/90 py-3 border-b border-white/10" href="/hizmetler" onclick="closeMobileMenu()">Hizmetler</a>
+    <a class="text-2xl font-headline text-white/90 py-3 border-b border-white/10" href="/ulkeler" onclick="closeMobileMenu()">Ülkeler</a>
+    <a class="text-2xl font-headline text-white/90 py-3 border-b border-white/10" href="/blog" onclick="closeMobileMenu()">Blog</a>
+    <a class="text-2xl font-headline text-white/90 py-3 border-b border-white/10" href="/hakkimizda" onclick="closeMobileMenu()">Hakkımızda</a>
+    <a class="text-2xl font-headline text-white/90 py-3" href="/iletisim" onclick="closeMobileMenu()">İletişim</a>
+  </div>
+  <div class="mt-auto flex flex-col gap-4 pb-8">
+    <a href="/anket" class="bg-secondary text-on-secondary px-6 py-4 text-sm font-bold text-center" onclick="closeMobileMenu()">Profil Anketi</a>
+    <a href="https://wa.me/393280991674" target="_blank" class="border border-tertiary-fixed-dim/50 text-tertiary-fixed-dim px-6 py-4 text-sm font-bold text-center">WhatsApp'tan Yaz</a>
+  </div>
+</div>
+<div id="mobile-overlay" class="fixed inset-0 z-30 bg-black/50 hidden" onclick="closeMobileMenu()"></div>
 <section class="relative h-[80vh] overflow-hidden flex items-end">
   <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent z-10"></div>
   <img alt="Sagrada Familia Barcelona İspanya" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1400&q=85"/>
