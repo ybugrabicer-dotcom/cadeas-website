@@ -131,47 +131,74 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
   </div>
 </section>
 
-<section class="py-24 container mx-auto px-8 lg:px-24">
-  <div class="grid lg:grid-cols-2 gap-20 items-start">
-    <div>
-      <span class="text-secondary font-bold tracking-widest text-xs mb-4 block">Neden İspanya?</span>
-      <h2 class="font-headline text-5xl mb-8 leading-tight">Kalite Odaklı <em>Bir Yaşam</em></h2>
-      <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
-        İspanya, sadece güneş ve denizden ibaret değil. Avrupa'nın en dinamik iş ekosistemlerinden birine ev sahipliği yaparken, kişisel zamanın kutsallığını koruyan bir denge sunar.
-      </p>
-      <div class="grid grid-cols-2 gap-8">
-        <div>
-          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">wb_sunny</span>
-          <h4 class="font-bold text-sm mb-1">İklim</h4>
-          <p class="text-xs text-on-surface-variant">Yılda ortalama 300 güneşli gün.</p>
+<section class="py-20 container mx-auto px-8 lg:px-24">
+  <div class="grid lg:grid-cols-3 gap-12 mb-16">
+
+    <div class="lg:col-span-2">
+      <span class="text-secondary font-bold tracking-widest text-xs mb-4 block">İSPANYA'DA OTURUM İZNİ</span>
+      <h2 class="font-headline text-4xl mb-6 leading-tight">Kimler için uygun?</h2>
+      <div class="space-y-4 mb-8">
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">laptop</span>
+          <div><p class="font-bold text-sm mb-1">Uzaktan çalışanlar → Dijital Göçebe Vizesi</p><p class="text-xs text-on-surface-variant leading-relaxed">Türkiye dışındaki bir işveren veya kendi şirketiniz için uzaktan çalışıyorsanız, İspanya'da yasal olarak ikamet edebilirsiniz. Aylık gelir eşiği yaklaşık 2.650 EUR.</p></div>
         </div>
-        <div>
-          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">account_balance</span>
-          <h4 class="font-bold text-sm mb-1">Hukuki Güvence</h4>
-          <p class="text-xs text-on-surface-variant">AB hukuk çerçevesinde mülkiyet ve yaşam hakkı.</p>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">savings</span>
+          <div><p class="font-bold text-sm mb-1">Pasif gelirli / Emekliler → Non-Lucrative Residence</p><p class="text-xs text-on-surface-variant leading-relaxed">Kira geliri, yatırım getirisi veya emekli maaşıyla yaşıyorsanız bu program sizin için. Aylık ~2.400 EUR gelir kanıtı gerekli (2026, tek kişi). Ortalama 2 ayda tamamlanıyor.</p></div>
         </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">work</span>
+          <div><p class="font-bold text-sm mb-1">Yüksek gelirli çalışanlar → Beckham Yasası</p><p class="text-xs text-on-surface-variant leading-relaxed">İspanya'ya işverenle taşınanlar için ilk 6 yıl %24 sabit gelir vergisi. Normal dilimde bu oran %47'ye ulaşabilir. Taşınmadan önce başvuru zorunlu.</p></div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">storefront</span>
+          <div><p class="font-bold text-sm mb-1">Girişimciler → Girişimci Oturum İzni</p><p class="text-xs text-on-surface-variant leading-relaxed">İspanya'da yenilikçi bir iş kurmak isteyenler için. İş planı değerlendirmesi gerekir, onay sonrası çalışma ve ikamet izni verilir.</p></div>
+        </div>
+      </div>
+
+      <h3 class="font-headline text-2xl mb-4">Kimler için uygun değil?</h3>
+      <div class="space-y-2 mb-8">
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">İspanya kaynaklı aktif geliri olan ve Beckham Yasası başvurusu yapmamış çalışanlar</p></div>
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Gelir kanıtı sağlayamayacak bireyler (Non-Lucrative için eşik gerekli)</p></div>
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Son 5 yılda İspanya'da vergi mükellefi olanlar (Beckham için)</p></div>
+      </div>
+
+      <h3 class="font-headline text-2xl mb-4">Süreç özeti</h3>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="text-center p-3 bg-primary text-on-primary"><div class="font-bold text-lg mb-1">1</div><p class="text-xs">Profil analizi</p></div>
+        <div class="text-center p-3 bg-surface-container"><div class="font-bold text-lg mb-1">2</div><p class="text-xs text-on-surface-variant">Evrak hazırlığı</p></div>
+        <div class="text-center p-3 bg-surface-container"><div class="font-bold text-lg mb-1">3</div><p class="text-xs text-on-surface-variant">Konsolosluk başvurusu</p></div>
+        <div class="text-center p-3 bg-secondary text-on-secondary"><div class="font-bold text-lg mb-1">4</div><p class="text-xs">Onay + yerleşim</p></div>
       </div>
     </div>
+
     <div class="space-y-4">
-      <div class="bg-surface-container-low p-8 border-t-4 border-secondary">
-        <span class="text-xs font-bold text-secondary tracking-widest block mb-3">Vergi Avantajı</span>
-        <h3 class="font-headline text-2xl mb-4">Beckham Yasası</h3>
-        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Yüksek gelirli profesyoneller için yüzde 24 sabit gelir vergisi oranı — 6 yıl boyunca.</p>
-        <ul class="space-y-2 text-sm">
-          <li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>600.000 €'ya kadar sabit yüzde 24 vergi</li>
-          <li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>İspanya dışı gelirler için muafiyet</li>
-          <li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>6 yıla kadar geçerli</li>
+      <div class="bg-primary text-on-primary p-8">
+        <h3 class="font-headline text-xl mb-4">Temel veriler</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Ortalama süre</span><span class="font-bold">~2 ay</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Non-Lucrative gelir</span><span class="font-bold">~2.400 EUR/ay</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Beckham Yasası vergi</span><span class="font-bold">%24 (6 yıl)</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Oturum izni geçerliliği</span><span class="font-bold">1 yıl (uzatılabilir)</span></li>
+          <li class="flex justify-between"><span class="text-on-primary-container">Kalıcı oturum</span><span class="font-bold">5 yıl sonra</span></li>
         </ul>
+        <a href="/anket.html" class="block mt-6 bg-secondary text-on-secondary px-6 py-3 text-xs font-bold text-center hover:brightness-110 transition-all">İspanya profilimi analiz et →</a>
       </div>
-      <div class="bg-surface-container-low p-8">
-        <span class="text-xs font-bold text-on-surface-variant tracking-widest block mb-3">Dijital Göçebe</span>
-        <h3 class="font-headline text-2xl mb-4">Dijital Göçebe Vizesi</h3>
-        <p class="text-on-surface-variant text-sm leading-relaxed">Uzaktan çalışanlar için min. 2.850 €/ay gelirle İspanya'da yasal oturum hakkı.</p>
-      </div>
-      <div class="bg-surface-container-low p-8">
-        <span class="text-xs font-bold text-on-surface-variant tracking-widest block mb-3">Pasif Gelir</span>
-        <h3 class="font-headline text-2xl mb-4">Non-Lucrative Vize</h3>
-        <p class="text-on-surface-variant text-sm leading-relaxed">Çalışmadan yaşamak isteyenler için min. 2.400 €/ay ile İspanya'da ikamet hakkı.</p>
+
+      <div class="bg-surface-container p-6">
+        <h4 class="font-bold mb-3 text-sm">Avantajlar</h4>
+        <ul class="space-y-2">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Beckham Yasası ile güçlü vergi avantajı</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Avrupa'nın en yüksek yaşam kalitelerinden biri</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Schengen bölgesinde serbest dolaşım</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>İklim, yaşam maliyeti ve kültürel uyum</li>
+        </ul>
+        <h4 class="font-bold mb-3 text-sm mt-4">Dikkat edilmesi gerekenler</h4>
+        <ul class="space-y-2">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>Bürokratik süreçler zaman alabilir</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>Dil engeli — İspanyolca avantaj sağlar</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>Madrid/Barselona kira maliyetleri artıyor</li>
+        </ul>
       </div>
     </div>
   </div>
