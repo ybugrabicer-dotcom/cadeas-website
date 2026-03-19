@@ -121,155 +121,86 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
 <div id="mobile-overlay" class="fixed inset-0 z-30 bg-black/50 hidden" onclick="closeMobileMenu()"></div>
 
 <!-- Hero -->
-<section class="bg-primary py-24 px-8 lg:px-24 text-on-primary">
-  <div class="container mx-auto">
-    <span class="text-tertiary-fixed-dim text-xs font-bold tracking-[0.3em] mb-6 block">Destinasyonlar</span>
-    <h1 class="font-headline text-5xl md:text-7xl leading-none mb-8">Üç Ülke, <em class="font-normal">Sonsuz İmkan</em></h1>
-    <p class="text-on-primary-container text-xl max-w-2xl leading-relaxed">
-      İspanya, İtalya ve Portekiz'de yasal olarak yaşamak için size en uygun rotayı birlikte belirleyelim.
-    </p>
+
+<section class="bg-gradient-to-br from-primary to-primary-container text-on-primary py-20">
+  <div class="container mx-auto px-8 lg:px-24">
+    <span class="text-tertiary-fixed-dim font-bold tracking-[0.3em] text-xs mb-6 block">ÜLKE SEÇİMİ</span>
+    <h1 class="text-4xl lg:text-6xl font-headline mb-6 leading-tight">Hangi ülke<br/><em class="text-tertiary-fixed-dim font-normal">size uygun?</em></h1>
+    <p class="text-lg text-on-primary-container max-w-2xl">İspanya, İtalya ve Portekiz birbirinden farklı avantajlar sunar. Profilinize göre doğru ülkeyi seçmek, sürecin en kritik adımıdır.</p>
   </div>
 </section>
 
-<!-- İspanya -->
-<section class="py-32 bg-surface">
+<section class="py-16 bg-surface">
   <div class="container mx-auto px-8 lg:px-24">
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
-      <div class="relative">
-        <img alt="Barcelona İspanya şehir manzarası" class="w-full h-[550px] object-cover editorial-shadow" src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=900&q=80"/ fetchpriority="high">
-        <div class="absolute -bottom-8 -left-8 bg-secondary text-on-secondary p-8 max-w-xs hidden lg:block">
-          <p class="font-headline text-xl mb-2">Beckham Yasası</p>
-          <p class="text-sm opacity-90">Yüzde 24 sabit vergi oranı — 6 yıl boyunca.</p>
-        </div>
+    <div class="overflow-x-auto mb-16">
+      <table class="w-full border-collapse text-sm">
+        <thead>
+          <tr class="bg-primary text-on-primary">
+            <th class="p-4 text-left font-bold">Kriter</th>
+            <th class="p-4 text-center font-bold">🇪🇸 İspanya</th>
+            <th class="p-4 text-center font-bold">🇮🇹 İtalya</th>
+            <th class="p-4 text-center font-bold">🇵🇹 Portekiz</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-outline-variant/20"><td class="p-4 font-semibold">Ortalama süre</td><td class="p-4 text-center text-secondary font-bold">~2 ay</td><td class="p-4 text-center text-on-surface-variant">3-5 ay</td><td class="p-4 text-center text-on-surface-variant">2-4 ay</td></tr>
+          <tr class="border-b border-outline-variant/20 bg-surface-container-low"><td class="p-4 font-semibold">Min. gelir</td><td class="p-4 text-center text-on-surface-variant">~2.400 EUR/ay</td><td class="p-4 text-center text-on-surface-variant">~2.580 EUR/ay</td><td class="p-4 text-center text-secondary font-bold">~760 EUR/ay</td></tr>
+          <tr class="border-b border-outline-variant/20"><td class="p-4 font-semibold">Vergi avantajı</td><td class="p-4 text-center text-secondary font-bold">Beckham %24</td><td class="p-4 text-center text-on-surface-variant">Flat Tax 100K</td><td class="p-4 text-center text-on-surface-variant">Sınırlı (2024+)</td></tr>
+          <tr class="border-b border-outline-variant/20 bg-surface-container-low"><td class="p-4 font-semibold">Vatandaşlık</td><td class="p-4 text-center text-on-surface-variant">10 yıl</td><td class="p-4 text-center text-on-surface-variant">10 yıl</td><td class="p-4 text-center text-secondary font-bold">5 yıl</td></tr>
+          <tr class="border-b border-outline-variant/20"><td class="p-4 font-semibold">Dijital göçebe</td><td class="p-4 text-center">✅</td><td class="p-4 text-center text-on-surface-variant">Sınırlı</td><td class="p-4 text-center">✅</td></tr>
+          <tr class="bg-surface-container-low"><td class="p-4 font-semibold">Yaşam maliyeti</td><td class="p-4 text-center text-on-surface-variant">Orta-Yüksek</td><td class="p-4 text-center text-on-surface-variant">Orta-Yüksek</td><td class="p-4 text-center text-secondary font-bold">Orta</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="text-3xl font-headline mb-8 text-center">Profilinize göre hangi ülke?</h2>
+    <div class="grid md:grid-cols-3 gap-6 mb-16">
+      <div class="p-8 bg-surface-container-low border-t-4 border-secondary">
+        <span class="text-2xl mb-4 block">🇪🇸</span>
+        <h3 class="font-headline text-xl mb-3">İspanya</h3>
+        <ul class="space-y-2 mb-4">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Beckham Yasası vergi avantajı arayanlar</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Aktif şehir hayatı (Madrid, Barselona)</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Non-Lucrative için yeterli pasif geliri olanlar</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Avrupa'da şirket kurmak isteyenler</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Ailece taşınan ve eğitim odaklı aileler</li>
+        </ul>
+        <a href="/ispanya.html" class="text-secondary text-xs font-bold border-b border-secondary pb-0.5 hover:text-primary transition-colors">İspanya detayları →</a>
       </div>
-      <div>
-        <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇪🇸</span>
-          <div>
-            <span class="text-secondary font-bold tracking-widest text-xs block">Destinasyon 01</span>
-            <h2 class="font-headline text-4xl">İspanya</h2>
-          </div>
-        </div>
-        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
-          Akdeniz iklimiyle Avrupa'nın en dinamik iş ekosistemlerinden biri. Beckham Yasası vergi avantajı ve çeşitli vize seçenekleriyle öne çıkıyor.
-        </p>
-        <div class="space-y-3 mb-10">
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Dijital Göçebe Vizesi</span>
-            <span class="text-sm text-secondary font-bold">Min. 2.850 €/ay</span>
-          </div>
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Non-Lucrative Vize</span>
-            <span class="text-sm text-secondary font-bold">Min. 2.400 €/ay</span>
-          </div>
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Kira (Madrid merkez)</span>
-            <span class="text-sm text-on-surface-variant">1.200 – 1.800 €/ay</span>
-          </div>
-        </div>
-        <a href="/ispanya.html" class="inline-block bg-primary text-on-primary px-10 py-4 text-sm font-bold hover:bg-secondary transition-all">
-          İspanya Rehberini İncele
-        </a>
+      <div class="p-8 bg-surface-container-low border-t-4 border-primary">
+        <span class="text-2xl mb-4 block">🇮🇹</span>
+        <h3 class="font-headline text-xl mb-3">İtalya</h3>
+        <ul class="space-y-2 mb-4">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Yüksek yurt dışı geliri olanlar (Flat Tax)</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Kültür ve gastronomi öncelikli yaşam arayanlar</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Torino, Milano veya Roma'da yaşamak isteyenler</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Startup veya serbest meslek kuracaklar</li>
+        </ul>
+        <a href="/italya.html" class="text-secondary text-xs font-bold border-b border-secondary pb-0.5 hover:text-primary transition-colors">İtalya detayları →</a>
+      </div>
+      <div class="p-8 bg-surface-container-low border-t-4 border-outline-variant">
+        <span class="text-2xl mb-4 block">🇵🇹</span>
+        <h3 class="font-headline text-xl mb-3">Portekiz</h3>
+        <ul class="space-y-2 mb-4">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>En düşük gelir eşiğiyle oturum izni isteyenler</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>5 yılda vatandaşlık hedefleyenler</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>Daha sakin ve uygun maliyetli yaşam arayanlar</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">→</span>İngilizce ağırlıklı ortam isteyenler</li>
+        </ul>
+        <a href="/portekiz.html" class="text-secondary text-xs font-bold border-b border-secondary pb-0.5 hover:text-primary transition-colors">Portekiz detayları →</a>
+      </div>
+    </div>
+
+    <div class="bg-primary text-on-primary p-10 text-center">
+      <h3 class="font-headline text-2xl mb-4">Hangi ülke profilinizle eşleşiyor?</h3>
+      <p class="text-on-primary-container mb-6 max-w-xl mx-auto">Profilinizi doldurun, 24 saat içinde analiz edelim.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/anket.html" class="bg-secondary text-on-secondary px-12 py-4 font-bold text-sm hover:brightness-110 transition-all">Profil Analizi Al →</a>
+        <a href="/iletisim.html" class="border border-tertiary-fixed-dim/50 text-tertiary-fixed-dim px-12 py-4 font-bold text-sm hover:bg-tertiary-fixed-dim/10 transition-all">15 Dk Görüşme Planla</a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- İtalya -->
-<section class="py-32 bg-surface-container-low">
-  <div class="container mx-auto px-8 lg:px-24">
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
-      <div>
-        <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇮🇹</span>
-          <div>
-            <span class="text-secondary font-bold tracking-widest text-xs block">Destinasyon 02</span>
-            <h2 class="font-headline text-4xl">İtalya</h2>
-          </div>
-        </div>
-        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
-          Sanat, tarih ve eşsiz gastronomi. CADEAS'ın kuruluş toprağı — kurucularımızın uluslararası hukuk eğitimi aldığı ülke.
-        </p>
-        <div class="space-y-3 mb-10">
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Elective Residence Vizesi</span>
-            <span class="text-sm text-secondary font-bold">Min. 31.000 €/yıl</span>
-          </div>
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Dijital Göçebe Vizesi</span>
-            <span class="text-sm text-secondary font-bold">Min. 2.700 €/ay</span>
-          </div>
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Kira (Milano merkez)</span>
-            <span class="text-sm text-on-surface-variant">1.200 – 2.500 €/ay</span>
-          </div>
-        </div>
-        <a href="/italya.html" class="inline-block bg-primary text-on-primary px-10 py-4 text-sm font-bold hover:bg-secondary transition-all">
-          İtalya Rehberini İncele
-        </a>
-      </div>
-      <div>
-        <img alt="Roma İtalya tarihi mimari" class="w-full h-[550px] object-cover editorial-shadow" src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=900&q=80"/ loading="lazy">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portekiz -->
-<section class="py-32 bg-surface">
-  <div class="container mx-auto px-8 lg:px-24">
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
-      <div class="relative">
-        <img alt="Lizbon Portekiz şehir manzarası" class="w-full h-[550px] object-cover editorial-shadow" src="https://images.unsplash.com/photo-1513735492246-483525079686?w=900&q=80"/ loading="lazy">
-        <div class="absolute -bottom-8 -right-8 bg-primary text-on-primary p-8 max-w-xs hidden lg:block">
-          <p class="font-headline text-xl mb-2">D7 Vizesi</p>
-          <p class="text-sm opacity-90">Sadece 920 €/ay gelirle Avrupa'da yasal ikamet.</p>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-4 mb-6">
-          <span class="text-4xl">🇵🇹</span>
-          <div>
-            <span class="text-secondary font-bold tracking-widest text-xs block">Destinasyon 03</span>
-            <h2 class="font-headline text-4xl">Portekiz</h2>
-          </div>
-        </div>
-        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
-          Avrupa'nın en erişilebilir oturum programları. Düşük yaşam maliyeti, güvenli ortam ve İngilizce yaygınlığıyla öne çıkıyor.
-        </p>
-        <div class="space-y-3 mb-10">
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">D7 Pasif Gelir Vizesi</span>
-            <span class="text-sm text-secondary font-bold">Min. 920 €/ay</span>
-          </div>
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">D8 Dijital Göçebe Vizesi</span>
-            <span class="text-sm text-secondary font-bold">Min. 3.480 €/ay</span>
-          </div>
-          <div class="flex justify-between border-b border-outline-variant/20 pb-3">
-            <span class="text-sm font-medium">Kira (Lizbon merkez)</span>
-            <span class="text-sm text-on-surface-variant">1.000 – 1.600 €/ay</span>
-          </div>
-        </div>
-        <a href="/portekiz.html" class="inline-block bg-primary text-on-primary px-10 py-4 text-sm font-bold hover:bg-secondary transition-all">
-          Portekiz Rehberini İncele
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Karşılaştırma CTA -->
-<section class="py-24 bg-primary text-on-primary text-center">
-  <div class="container mx-auto px-8">
-    <h2 class="font-headline text-4xl mb-6">Hangi ülke size uygun?</h2>
-    <p class="text-on-primary-container text-lg mb-10 max-w-2xl mx-auto">Profilinizi analiz edelim, en doğru seçeneği birlikte belirleyelim.</p>
-    <a href="/anket.html" class="inline-block bg-secondary text-on-secondary px-12 py-5 text-sm font-bold hover:brightness-110 transition-all">
-      Profil Anketini Doldur
-    </a>
-  </div>
-</section>
-
 <footer class="bg-surface py-20 border-t border-outline-variant/15">
   <div class="container mx-auto px-8 lg:px-24">
     <div class="grid lg:grid-cols-4 gap-16 mb-20">
