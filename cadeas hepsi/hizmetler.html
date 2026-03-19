@@ -144,55 +144,75 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
 </section>
 
 <!-- Hizmet 1: Oturum Danışmanlığı -->
-<section class="py-32 bg-surface">
+<section class="py-20 bg-surface">
   <div class="container mx-auto px-8 lg:px-24">
-    <div class="grid lg:grid-cols-2 gap-20 items-start">
-      <div class="relative">
-        <div class="absolute -top-4 -left-4 w-16 h-16 border-t border-l border-tertiary-fixed-dim"></div>
-        <img alt="Vize ve oturum belgesi hazırlığı" class="w-full h-[500px] object-cover editorial-shadow" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"/ loading="lazy">
+    <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+      <div class="max-w-2xl">
+        <span class="text-secondary font-bold tracking-[0.3em] text-xs mb-4 block">HİZMETLERİMİZ</span>
+        <h2 class="text-4xl lg:text-5xl font-headline mb-4">Üç hizmet, bir süreç.</h2>
+        <p class="text-on-surface-variant">Oturum izninden relocation'a, şirket kurulumundan vergi yapılandırmasına — her adım koordineli yürür.</p>
       </div>
-      <div class="lg:pl-8">
-        <span class="text-secondary font-bold tracking-widest text-xs mb-4 block">Modül 01</span>
-        <h2 class="font-headline text-4xl md:text-5xl mb-8 leading-tight">Oturum Danışmanlığı</h2>
-        <p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
-          Vize ve oturum süreçlerinizi başından sonuna yönetiyoruz. Dijital göçebeden yatırımcıya, size en uygun rotayı birlikte çiziyoruz.
-        </p>
-        <div class="grid md:grid-cols-2 gap-6 mb-10">
-          <div class="p-6 bg-surface-container-low">
-            <span class="material-symbols-outlined text-secondary mb-3 text-2xl block">travel_explore</span>
-            <h3 class="font-headline text-lg mb-2">Dijital Göçebe Vizesi</h3>
-            <p class="text-sm text-on-surface-variant">İspanya, İtalya ve Portekiz için uzaktan çalışma vizesi.</p>
-          </div>
-          <div class="p-6 bg-surface-container-low">
-            <span class="material-symbols-outlined text-secondary mb-3 text-2xl block">savings</span>
-            <h3 class="font-headline text-lg mb-2">Pasif Gelir Vizesi</h3>
-            <p class="text-sm text-on-surface-variant">D7, Non-Lucrative ve Elective Residence programları.</p>
-          </div>
+      <a class="text-secondary border-b border-secondary pb-1 font-bold text-xs hover:text-primary transition-colors" href="/iletisim.html">Soru sormak için yazın</a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-surface-container-low flex flex-col">
+        <div class="relative overflow-hidden aspect-[3/4]">
+          <img class="w-full h-full object-cover" alt="Oturum izni danışmanlığı" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" loading="lazy">
+          <div class="absolute top-6 left-6"><div class="bg-secondary text-on-secondary w-12 h-12 flex items-center justify-center font-headline text-xl italic">01</div></div>
         </div>
-        <ul class="space-y-3 mb-10">
-          <li class="flex items-center gap-3 text-sm text-on-surface-variant">
-            <span class="w-1.5 h-1.5 bg-tertiary-fixed-dim flex-shrink-0"></span>
-            Vize kategori analizi ve strateji belirleme
-          </li>
-          <li class="flex items-center gap-3 text-sm text-on-surface-variant">
-            <span class="w-1.5 h-1.5 bg-tertiary-fixed-dim flex-shrink-0"></span>
-            Evrak hazırlığı, çeviri ve tasdik koordinasyonu
-          </li>
-          <li class="flex items-center gap-3 text-sm text-on-surface-variant">
-            <span class="w-1.5 h-1.5 bg-tertiary-fixed-dim flex-shrink-0"></span>
-            Konsolosluk randevu yönetimi ve başvuru takibi
-          </li>
-        </ul>
-        <a href="/iletisim.html" class="inline-flex items-center gap-3 text-secondary font-bold text-sm">
-          Bu Hizmet Hakkında Danışın
-          <span class="material-symbols-outlined">arrow_right_alt</span>
-        </a>
+        <div class="p-8 flex flex-col flex-1">
+          <h3 class="font-headline text-2xl mb-4">Oturum İzni Danışmanlığı</h3>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">KİMLER İÇİN UYGUN</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Uzaktan çalışanlar, pasif gelir sahipleri, emekliler, yatırımcılar ve ailesiyle taşınmak isteyenler.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">KAPSAM</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Profil analizi → oturum izni türü belirleme → evrak hazırlığı → konsolosluk başvurusu → onay takibi.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">ORTALAMA SÜRE</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">İspanya'da ortalama 2 ay. Diğer ülkeler profil ve belgelere göre değişir.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">SİZ NE ALIRSINIZ</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Hedef ülkede geçerli oturum izni. Tüm süreç CADEAS koordinasyonunda yürür.</p>
+          <a href="/anket.html" class="text-secondary text-xs font-bold border-b border-secondary pb-0.5 hover:text-primary transition-colors mt-auto">Ücretsiz profil analizi al →</a>
+        </div>
+      </div>
+      <div class="bg-surface-container-low flex flex-col">
+        <div class="relative overflow-hidden aspect-[3/4]">
+          <img class="w-full h-full object-cover" alt="Relocation hizmetleri" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80" loading="lazy">
+          <div class="absolute top-6 left-6"><div class="bg-primary text-on-primary w-12 h-12 flex items-center justify-center font-headline text-xl italic">02</div></div>
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <h3 class="font-headline text-2xl mb-4">Relocation Hizmetleri</h3>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">KİMLER İÇİN UYGUN</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Oturum izni almış veya almak üzere olan, yeni ülkesinde kurulu bir yaşam düzeni kurmak isteyen herkes.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">KAPSAM</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">NIE/NIF/CF işlemleri, banka hesabı, konut, okul kaydı, sağlık sigortası, adres tescili.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">NE ZAMAN TERCİH EDİLMELİ</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Oturum izni onayıyla eş zamanlı veya hemen sonrasında başlanabilir.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">SİZ NE ALIRSINIZ</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Sıfırdan değil, hazır bir sistemle. Banka, adres, konut, okul — koordineli.</p>
+          <a href="/iletisim.html" class="text-secondary text-xs font-bold border-b border-secondary pb-0.5 hover:text-primary transition-colors mt-auto">Neye ihtiyacınız olduğunu konuşalım →</a>
+        </div>
+      </div>
+      <div class="bg-surface-container-low flex flex-col">
+        <div class="relative overflow-hidden aspect-[3/4]">
+          <img class="w-full h-full object-cover" alt="Şirket kurulum danışmanlığı" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&q=80" loading="lazy">
+          <div class="absolute top-6 left-6"><div class="bg-primary text-on-primary w-12 h-12 flex items-center justify-center font-headline text-xl italic">03</div></div>
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <h3 class="font-headline text-2xl mb-4">Şirket Kurulum ve Hukuki Danışmanlık</h3>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">KİMLER İÇİN UYGUN</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Avrupa'da şirket kurmak, Beckham Yasası'ndan yararlanmak isteyen girişimciler ve üst düzey yöneticiler.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">KAPSAM</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Şirket kurulumu, Beckham Yasası başvurusu, vergi yapılandırması, sözleşme incelemesi, yerel büro koordinasyonu.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">NE ZAMAN TERCİH EDİLMELİ</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-3">İspanya'ya taşınmadan 3-6 ay önce. Beckham Yasası için hazırlık zorunlu.</p>
+          <p class="text-on-surface-variant text-xs font-bold tracking-wider mb-1">SİZ NE ALIRSINIZ</p>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Yasal ve vergi açısından optimize yapıyla faaliyete geçiş. İlk yıl vergi avantajı çoğu durumda danışmanlık maliyetini aşar.</p>
+          <a href="/iletisim.html" class="text-secondary text-xs font-bold border-b border-secondary pb-0.5 hover:text-primary transition-colors mt-auto">Sürecinizi planlayalım →</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Hizmet 2: Yerleşim Hizmetleri -->
 <section class="py-32 bg-surface-container-low">
   <div class="container mx-auto px-8 lg:px-24">
     <div class="grid lg:grid-cols-2 gap-20 items-start">
