@@ -130,21 +130,71 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
   </div>
 </section>
 
-<section class="py-24 container mx-auto px-8 lg:px-24">
-  <div class="grid lg:grid-cols-2 gap-20">
-    <div>
-      <h2 class="font-headline text-5xl mb-8">Kültür ve <em>Yaşam</em></h2>
-      <p class="text-on-surface-variant text-lg leading-relaxed mb-8">İtalya'da yaşam, sadece bir yer değiştirmek değil, bir hayat felsefesidir. CADEAS'ın kuruluş toprağı — kurucularımızın uluslararası hukuk eğitimi aldığı ülke.</p>
-    </div>
-    <div class="space-y-4">
-      <div class="bg-surface-container-low p-8 border-t-4 border-secondary">
-        <div class="flex justify-between items-start mb-4"><h3 class="font-headline text-2xl">Elective Residence Vizesi</h3><span class="text-xs font-bold border border-outline-variant px-2 py-1">Popüler</span></div>
-        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Pasif gelir sahipleri için yıllık min. 31.000 € ile İtalya'da ikamet hakkı.</p>
-        <ul class="space-y-2 text-sm"><li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>Tüm AB'de serbest dolaşım</li><li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>5 yıl sonunda kalıcı ikamet</li></ul>
+<section class="py-20 container mx-auto px-8 lg:px-24">
+  <div class="grid lg:grid-cols-3 gap-12 mb-16">
+    <div class="lg:col-span-2">
+      <span class="text-secondary font-bold tracking-widest text-xs mb-4 block">İTALYA'DA OTURUM İZNİ</span>
+      <h2 class="font-headline text-4xl mb-6 leading-tight">Kimler için uygun?</h2>
+      <div class="space-y-4 mb-8">
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">savings</span>
+          <div><p class="font-bold text-sm mb-1">Pasif gelirli / Emekliler → Elective Residency Visa</p><p class="text-xs text-on-surface-variant leading-relaxed">İtalya'da çalışmadan yaşamak isteyenler için. Yeterli pasif gelir kanıtı ve konut taahhüdü gereklidir. Aylık ~31.000 EUR yıllık gelir eşiği (2026).</p></div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">euro</span>
+          <div><p class="font-bold text-sm mb-1">Yüksek net değerli bireyler → Flat Tax Rejimi</p><p class="text-xs text-on-surface-variant leading-relaxed">Yurt dışı kaynaklı tüm gelirler üzerinde yıllık 100.000 EUR sabit vergi. Vergi yükü yüksek olan varlıklı bireyler için güçlü bir avantaj.</p></div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">storefront</span>
+          <div><p class="font-bold text-sm mb-1">Girişimciler → Startup Visa / Self-Employment</p><p class="text-xs text-on-surface-variant leading-relaxed">İtalya'da yenilikçi startup kuranlar veya serbest meslek sahipleri için oturum yolu. Detaylı iş planı ve finansal kapasite değerlendirmesi yapılır.</p></div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">school</span>
+          <div><p class="font-bold text-sm mb-1">Öğrenciler → Öğrenci Oturum İzni</p><p class="text-xs text-on-surface-variant leading-relaxed">İtalya'da lisans, yüksek lisans veya dil programına kayıtlı öğrenciler için. Mezuniyet sonrası çalışma iznine geçiş mümkün.</p></div>
+        </div>
       </div>
-      <div class="bg-surface-container-low p-8">
-        <h3 class="font-headline text-2xl mb-4">Dijital Göçebe Vizesi</h3>
-        <p class="text-on-surface-variant text-sm leading-relaxed">Uzaktan çalışan profesyoneller için min. 2.700 €/ay gelirle İtalya'da yasal oturum.</p>
+
+      <h3 class="font-headline text-2xl mb-4">Kimler için uygun değil?</h3>
+      <div class="space-y-2 mb-8">
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Düzenli pasif geliri olmayan ve çalışma izni almayan bireyler</p></div>
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Flat Tax için yurt dışı geliri düşük olanlar (avantaj sınırlı kalır)</p></div>
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Bürokratik süreç toleransı düşük olanlar — İtalya işlemleri zaman alabilir</p></div>
+      </div>
+
+      <h3 class="font-headline text-2xl mb-4">Süreç özeti</h3>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="text-center p-3 bg-primary text-on-primary"><div class="font-bold text-lg mb-1">1</div><p class="text-xs">Profil analizi</p></div>
+        <div class="text-center p-3 bg-surface-container"><div class="font-bold text-lg mb-1">2</div><p class="text-xs text-on-surface-variant">Evrak hazırlığı</p></div>
+        <div class="text-center p-3 bg-surface-container"><div class="font-bold text-lg mb-1">3</div><p class="text-xs text-on-surface-variant">Konsolosluk başvurusu</p></div>
+        <div class="text-center p-3 bg-secondary text-on-secondary"><div class="font-bold text-lg mb-1">4</div><p class="text-xs">Onay + yerleşim</p></div>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      <div class="bg-primary text-on-primary p-8">
+        <h3 class="font-headline text-xl mb-4">Temel veriler</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Ortalama süre</span><span class="font-bold">3-5 ay</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Flat Tax eşiği</span><span class="font-bold">100.000 EUR/yıl</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Permesso di Soggiorno</span><span class="font-bold">1-2 yıl geçerli</span></div></li>
+          <li class="flex justify-between"><span class="text-on-primary-container">Vatandaşlık</span><span class="font-bold">10 yıl sonra</span></li>
+        </ul>
+        <a href="/anket.html" class="block mt-6 bg-secondary text-on-secondary px-6 py-3 text-xs font-bold text-center hover:brightness-110 transition-all">İtalya profilimi analiz et →</a>
+      </div>
+
+      <div class="bg-surface-container p-6">
+        <h4 class="font-bold mb-3 text-sm">Avantajlar</h4>
+        <ul class="space-y-2">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Flat Tax rejimi yüksek gelirli için güçlü</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Kültürel zenginlik ve yaşam kalitesi</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Schengen bölgesi serbest dolaşım</li>
+        </ul>
+        <h4 class="font-bold mb-3 text-sm mt-4">Dikkat edilmesi gerekenler</h4>
+        <ul class="space-y-2">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>Bürokratik süreçler uzun ve karmaşık olabilir</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>İtalyanca bilmek süreçleri kolaylaştırır</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>Kuzey/Güney arasında ciddi yaşam farkı var</li>
+        </ul>
       </div>
     </div>
   </div>
