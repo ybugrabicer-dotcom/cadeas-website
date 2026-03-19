@@ -130,35 +130,68 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
   </div>
 </section>
 
-<section class="py-24 container mx-auto px-8 lg:px-24">
-  <div class="grid lg:grid-cols-2 gap-20 items-start">
-    <div>
-      <h2 class="font-headline text-5xl mb-8">Neden <em>Portekiz?</em></h2>
-      <p class="text-on-surface-variant text-lg leading-relaxed mb-8">Avrupa'nın en erişilebilir oturum programları. Düşük yaşam maliyeti, güvenli ortam ve İngilizce yaygınlığıyla öne çıkıyor.</p>
-      <div class="grid grid-cols-2 gap-8 mb-8">
-        <div class="bg-surface-container-low p-6"><span class="text-3xl font-headline text-primary block mb-1">300+</span><span class="text-xs font-bold tracking-widest text-on-surface-variant">Güneşli Gün/Yıl</span></div>
-        <div class="bg-surface-container-low p-6"><span class="text-3xl font-headline text-primary block mb-1">#7</span><span class="text-xs font-bold tracking-widest text-on-surface-variant">Dünya Barış Endeksi</span></div>
+<section class="py-20 container mx-auto px-8 lg:px-24">
+  <div class="grid lg:grid-cols-3 gap-12 mb-16">
+    <div class="lg:col-span-2">
+      <span class="text-secondary font-bold tracking-widest text-xs mb-4 block">PORTEKİZ'DE OTURUM İZNİ</span>
+      <h2 class="font-headline text-4xl mb-6 leading-tight">Kimler için uygun?</h2>
+      <div class="space-y-4 mb-8">
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">savings</span>
+          <div><p class="font-bold text-sm mb-1">Pasif gelirli / Emekliler → D7 Vizesi</p><p class="text-xs text-on-surface-variant leading-relaxed">Kira geliri, yatırım getirisi veya emekli maaşıyla Portekiz'de yaşamak isteyenler için. Aylık minimum ~760 EUR gelir kanıtı gerekli. 5 yıl sonra vatandaşlık hakkı doğar.</p></div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">laptop</span>
+          <div><p class="font-bold text-sm mb-1">Uzaktan çalışanlar → Dijital Göçebe Vizesi</p><p class="text-xs text-on-surface-variant leading-relaxed">Portekiz merkezli olmayan bir işveren veya kendi şirketiniz için çalışıyorsanız. Aylık minimum ~3.040 EUR gelir eşiği (4 × asgari ücret). Lizbon başta olmak üzere popüler destinasyon.</p></div>
+        </div>
+        <div class="flex gap-4 p-4 bg-surface-container-low">
+          <span class="material-symbols-outlined text-secondary mt-0.5">storefront</span>
+          <div><p class="font-bold text-sm mb-1">Girişimciler → Entrepreneur / Self-Employment Visa</p><p class="text-xs text-on-surface-variant leading-relaxed">Portekiz'de serbest meslek icra edecek veya şirket kuracaklar için. İş planı ve finansal kapasite değerlendirmesi yapılır.</p></div>
+        </div>
+      </div>
+
+      <h3 class="font-headline text-2xl mb-4">Kimler için uygun değil?</h3>
+      <div class="space-y-2 mb-8">
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Dijital Göçebe Vizesi için gelir eşiğini karşılamayanlar (~3.040 EUR/ay)</p></div>
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Bekham Yasası gibi vergi avantajı arayanlar (İspanya daha avantajlı olabilir)</p></div>
+        <div class="flex gap-3 items-start"><span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">remove_circle</span><p class="text-sm text-on-surface-variant">Avrupa'nın büyük şehir enerjisini arayanlar — Portekiz daha sakin bir tempodur</p></div>
+      </div>
+
+      <h3 class="font-headline text-2xl mb-4">Süreç özeti</h3>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="text-center p-3 bg-primary text-on-primary"><div class="font-bold text-lg mb-1">1</div><p class="text-xs">Profil analizi</p></div>
+        <div class="text-center p-3 bg-surface-container"><div class="font-bold text-lg mb-1">2</div><p class="text-xs text-on-surface-variant">Evrak hazırlığı</p></div>
+        <div class="text-center p-3 bg-surface-container"><div class="font-bold text-lg mb-1">3</div><p class="text-xs text-on-surface-variant">Konsolosluk başvurusu</p></div>
+        <div class="text-center p-3 bg-secondary text-on-secondary"><div class="font-bold text-lg mb-1">4</div><p class="text-xs">Onay + yerleşim</p></div>
       </div>
     </div>
+
     <div class="space-y-4">
-      <div class="bg-surface-container-low p-8 border-t-4 border-secondary">
-        <span class="text-xs font-bold text-secondary tracking-widest block mb-3">Pasif Gelir</span>
-        <h3 class="font-headline text-2xl mb-4">D7 Vizesi</h3>
-        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Emekliler ve pasif gelir sahipleri için min. 920 €/ay ile Portekiz'de ikamet.</p>
-        <ul class="space-y-2 text-sm"><li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>5 yıl sonunda vatandaşlık hakkı</li><li class="flex gap-3"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span>Tüm Schengen'de seyahat</li></ul>
-      </div>
       <div class="bg-primary text-on-primary p-8">
-        <span class="text-xs font-bold text-tertiary-fixed-dim tracking-widest block mb-3">Dijital Göçebe</span>
-        <h3 class="font-headline text-2xl mb-4">D8 Vizesi</h3>
-        <p class="text-on-primary-container text-sm leading-relaxed">Uzaktan çalışanlar için min. 3.480 €/ay gelirle Portekiz'de yasal oturum.</p>
+        <h3 class="font-headline text-xl mb-4">Temel veriler</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">D7 min. gelir</span><span class="font-bold">~760 EUR/ay</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Dijital Göçebe min.</span><span class="font-bold">~3.040 EUR/ay</span></li>
+          <li class="flex justify-between border-b border-white/10 pb-2"><span class="text-on-primary-container">Kalıcı oturum</span><span class="font-bold">2 yıl sonra</span></li>
+          <li class="flex justify-between"><span class="text-on-primary-container">Vatandaşlık</span><span class="font-bold">5 yıl sonra</span></li>
+        </ul>
+        <a href="/anket.html" class="block mt-6 bg-secondary text-on-secondary px-6 py-3 text-xs font-bold text-center hover:brightness-110 transition-all">Portekiz profilimi analiz et →</a>
       </div>
-      <div class="bg-surface-container-low p-8">
-        <h3 class="font-headline text-2xl mb-4">Yaşam Maliyetleri</h3>
-        <div class="space-y-3">
-          <div class="flex justify-between text-sm"><span>Merkezi 1+1 daire</span><span class="font-bold text-primary">~1.200 €/ay</span></div>
-          <div class="flex justify-between text-sm"><span>Market (kişi başı)</span><span class="font-bold text-primary">~350 €/ay</span></div>
-          <div class="flex justify-between text-sm"><span>Aylık ulaşım kartı</span><span class="font-bold text-primary">~40 €/ay</span></div>
-        </div>
+
+      <div class="bg-surface-container p-6">
+        <h4 class="font-bold mb-3 text-sm">Avantajlar</h4>
+        <ul class="space-y-2">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>D7 en erişilebilir Avrupa oturum izinlerinden biri</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>5 yılda vatandaşlık — Avrupa'nın en hızlılarından</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>Yaşam maliyeti İspanya ve İtalya'dan düşük</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-secondary">+</span>İngilizce yeterlilik oranı yüksek</li>
+        </ul>
+        <h4 class="font-bold mb-3 text-sm mt-4">Dikkat edilmesi gerekenler</h4>
+        <ul class="space-y-2">
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>SEF (göçmenlik bürosu) randevu süreleri uzun olabilir</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>NHR vergi rejimi önceki kadar avantajlı değil (2024+)</li>
+          <li class="text-xs text-on-surface-variant flex gap-2"><span class="text-on-surface-variant">−</span>Lizbon kiraları hızla artıyor</li>
+        </ul>
       </div>
     </div>
   </div>
