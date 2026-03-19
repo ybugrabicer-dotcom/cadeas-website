@@ -44,6 +44,101 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffd
 </nav>
 
 <!-- Hero + Form Grid -->
+<section class="bg-gradient-to-br from-primary to-primary-container text-on-primary py-20">
+  <div class="container mx-auto px-8 lg:px-24">
+    <span class="text-tertiary-fixed-dim font-bold tracking-[0.3em] text-xs mb-6 block">İLETİŞİM</span>
+    <h1 class="text-4xl lg:text-5xl font-headline mb-4">Başlamak için doğru yer.</h1>
+    <p class="text-xl text-on-primary-container max-w-2xl">Profil analizi, görüşme planlamak veya doğrudan soru sormak için aşağıdaki seçenekleri kullanın.</p>
+  </div>
+</section>
+
+<section class="py-16 bg-surface">
+  <div class="container mx-auto px-8 lg:px-24">
+    <div class="grid lg:grid-cols-3 gap-8 mb-16">
+      <div class="p-8 bg-surface-container-low border-t-4 border-secondary">
+        <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">assignment</span>
+        <h2 class="font-headline text-xl mb-3">Profil Analizi Al</h2>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">3 dakikada profilinizi doldurun. 24 saat içinde hangi ülke, hangi oturum izni ve nasıl bir süreç sizi beklediğini açıklayan kişisel bir değerlendirme alın.</p>
+        <p class="text-xs text-on-surface-variant mb-1"><strong>Kimler kullanmalı:</strong> Henüz karar vermemiş, seçenekleri anlamak isteyenler.</p>
+        <p class="text-xs text-on-surface-variant mb-4"><strong>Dönüş süresi:</strong> 24 saat</p>
+        <a href="/anket.html" class="bg-secondary text-on-secondary px-6 py-3 text-xs font-bold hover:brightness-110 transition-all inline-block">Profil Anketini Doldur →</a>
+      </div>
+      <div class="p-8 bg-surface-container-low border-t-4 border-primary">
+        <span class="material-symbols-outlined text-primary text-3xl mb-4 block">chat</span>
+        <h2 class="font-headline text-xl mb-3">WhatsApp ile Yazın</h2>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Hızlı soru sormak, bilgi almak veya randevu planlamak için WhatsApp'tan doğrudan ulaşın. Mesai saatleri içinde (09:00–18:00) yanıt verilir.</p>
+        <p class="text-xs text-on-surface-variant mb-1"><strong>Kimler kullanmalı:</strong> Kısa sorularını yanıtlatmak isteyenler.</p>
+        <p class="text-xs text-on-surface-variant mb-4"><strong>Dönüş süresi:</strong> Aynı gün</p>
+        <a href="https://wa.me/393280991674" target="_blank" class="bg-primary text-on-primary px-6 py-3 text-xs font-bold hover:bg-primary-container transition-all inline-block">WhatsApp'tan Yaz →</a>
+      </div>
+      <div class="p-8 bg-surface-container-low border-t-4 border-outline-variant">
+        <span class="material-symbols-outlined text-on-surface text-3xl mb-4 block">video_call</span>
+        <h2 class="font-headline text-xl mb-3">15 Dk Görüşme Planla</h2>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">Profilinizi kısaca paylaşın, uzmanlarımızla 15 dakikalık ücretsiz ön görüşme planlayın. Hangi sorularınızı yanıtlayabileceğimizi ve ne gibi bir süreç öngördüğümüzü aktaralım.</p>
+        <p class="text-xs text-on-surface-variant mb-1"><strong>Kimler kullanmalı:</strong> Süreci konuşmak isteyenler.</p>
+        <p class="text-xs text-on-surface-variant mb-4"><strong>Dönüş süresi:</strong> 24-48 saat</p>
+        <a href="mailto:info@cadeaslegal.com?subject=15%20Dakika%20Görüşme%20Talebi" class="border border-outline-variant text-on-surface px-6 py-3 text-xs font-bold hover:bg-surface-container transition-all inline-block">Görüşme Talep Et →</a>
+      </div>
+    </div>
+
+    <div class="bg-surface-container p-10 max-w-2xl mx-auto text-center">
+      <h3 class="font-headline text-2xl mb-4">Doğrudan iletişim</h3>
+      <div class="space-y-3 text-sm text-on-surface-variant">
+        <p>📧 <a href="mailto:info@cadeaslegal.com" class="hover:text-secondary">info@cadeaslegal.com</a></p>
+        <p>📱 Instagram: <a href="https://instagram.com/cadeaslegal" class="hover:text-secondary">@cadeaslegal</a></p>
+        <p>🇮🇹 Torino: Via Davide Bertolotti 7</p>
+        <p>🇪🇸 Madrid: Calle Luis Vélez de Guevara 28</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#ffdadb","surface-bright":"#fdf9f3","on-primary-fixed-variant":"#3a4665","outline":"#75777e","outline-variant":"#c5c6ce","on-error":"#ffffff","error":"#ba1a1a","on-tertiary-container":"#9c8e71","on-tertiary":"#ffffff","tertiary-fixed":"#f2e1c0","on-secondary-fixed":"#40000d","surface-container":"#f1ede7","inverse-primary":"#b9c6eb","background":"#fdf9f3","inverse-on-surface":"#f4f0ea","secondary-fixed-dim":"#ffb2b6","tertiary-fixed-dim":"#d5c5a5","surface-container-high":"#ebe8e2","on-secondary-fixed-variant":"#842131","on-primary":"#ffffff","secondary-container":"#ff7e8a","on-background":"#1c1c18","primary-fixed":"#d9e2ff","tertiary-container":"#302711","secondary":"#a43946","surface-container-highest":"#e6e2dc","tertiary":"#1a1302","surface-dim":"#ddd9d4","on-primary-fixed":"#0d1b37","surface-tint":"#515e7e","on-error-container":"#93000a","on-surface-variant":"#45464d","inverse-surface":"#31302d","error-container":"#ffdad6","primary-fixed-dim":"#b9c6eb","on-tertiary-fixed":"#231a06","surface-variant":"#e6e2dc","primary-container":"#1a2744","surface":"#fdf9f3","on-primary-container":"#828eb1","on-secondary":"#ffffff","surface-container-low":"#f7f3ed","surface-container-lowest":"#ffffff","primary":"#04122e","on-secondary-container":"#751426","on-surface":"#1c1c18","on-tertiary-fixed-variant":"#51452d"},fontFamily:{"headline":["Noto Serif","serif"],"body":["Manrope","sans-serif"],"label":["Manrope","sans-serif"]},borderRadius:{"DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px"}}}}
+</script>
+<style>
+.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 24}
+.editorial-shadow{box-shadow:0 40px 40px -20px rgba(4,18,46,0.06)}
+</style>
+<title>İletişim | CADEAS Legal Consulting — Ücretsiz Danışmanlık Randevusu</title>
+<meta name="description" content="CADEAS Legal Consulting ile iletişime geçin. Torino ve Madrid ofislerimizden Avrupa oturum danışmanlığı için ücretsiz ilk görüşme talep edin."/>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<nav class="sticky top-0 z-50 bg-primary backdrop-blur-md border-b border-white/10 px-8 py-4 flex items-center justify-between">
+  <div class="flex items-center gap-12">
+    <a href="/" aria-label="CADEAS Legal Consulting Ana Sayfa" class="flex items-center gap-0" style="text-decoration:none;">
+      <span style="font-family:'Noto Serif',serif;font-size:1.3rem;font-weight:700;color:#c9b99a;letter-spacing:0.05em;">CADEAS</span>
+      <span style="font-family:'Manrope',sans-serif;font-size:0.65rem;font-weight:400;color:#a0b0c8;letter-spacing:0.18em;margin-left:8px;margin-top:3px;align-self:flex-end;padding-bottom:2px;">LEGAL CONSULTING</span>
+    </a>
+    <div class="hidden lg:flex gap-8">
+      <a class="text-sm font-semibold tracking-wide text-white/80 hover:text-tertiary-fixed-dim transition-colors" href="/hizmetler.html">Hizmetler</a>
+      <a class="text-sm font-semibold tracking-wide text-white/80 hover:text-tertiary-fixed-dim transition-colors" href="/ulkeler.html">Ülkeler</a>
+      <a class="text-sm font-semibold tracking-wide text-white/80 hover:text-tertiary-fixed-dim transition-colors" href="/blog.html">Blog</a>
+      <a class="text-sm font-semibold tracking-wide text-white/80 hover:text-tertiary-fixed-dim transition-colors" href="/hakkimizda.html">Hakkımızda</a>
+      <a class="text-sm font-semibold tracking-wide text-white/80 hover:text-tertiary-fixed-dim transition-colors" href="/iletisim.html">İletişim</a>
+    </div>
+  </div>
+  <div class="flex items-center gap-6">
+    <div class="flex items-center gap-2 cursor-pointer">
+      <span class="material-symbols-outlined text-white/70">language</span>
+      <span class="text-xs font-bold text-white/70">TR / EN</span>
+    </div>
+    <a href="/anket.html" class="bg-secondary text-on-secondary px-6 py-2.5 text-sm font-bold hover:brightness-110 transition-all">
+      Profil Anketi
+    </a>
+  </div>
+</nav>
+
+<!-- Hero + Form Grid -->
 <section class="min-h-[80vh] grid grid-cols-1 lg:grid-cols-12">
   <!-- Sol Panel -->
   <div class="lg:col-span-5 bg-primary p-12 lg:p-20 flex flex-col justify-between">
